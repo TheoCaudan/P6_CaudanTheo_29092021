@@ -1,0 +1,80 @@
+.lightbox{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    overflow: hidden;
+    animation: lightboxIn 500ms;
+}
+.lightboxContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    &Pic{
+        max-width: 100%;
+        height: auto;
+        animation: lightboxIn 500ms;
+    }
+}
+#lightboxContentMedia{
+    max-width: 1050px;
+    max-height: 900px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+    &Title{
+        position: absolute;
+        width: 80%;
+        top: 90%;
+        transform: translate(-50%, -10%);
+    }
+    &Likes{
+        position: absolute;
+        top: 92%;
+        width: 80%;
+        height: 25px;
+        &Nbr{
+            position: absolute;
+            top: 90%;
+            width: 80%;
+            height: 25px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.lightboxCloser{
+    cursor: pointer;
+    position: absolute;
+    font-size: xxx-large;
+    color: $color-secondary-text;
+}
+.prevPic, .nextPic{
+    position: absolute;
+    top: 50%;
+    z-index: 11;
+    cursor: pointer;
+    font-size: xxx-large;
+    color: $color-secondary-text;
+}
+@keyframes lightboxIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

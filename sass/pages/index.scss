@@ -1,0 +1,198 @@
+.goToContent:focus, .goToContent:hover{
+    display: block;
+}
+.mainTitle{
+    display: block;
+    font-weight: 500;
+    font-size: 36px;
+    position: relative;
+    width: 325px;
+    height: 47px;
+    margin-right: 70px;
+    margin-left: auto;
+    line-height: 47px;
+}
+.gridPhotographersWrapper{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    max-width: 1440px;
+    .gridPhotographers{
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;  
+        gap: 10px;  
+    }
+}
+.gridPhotographerTag a{
+    &:hover{
+        background-color: $color-primary-bg;
+        color: white;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .mainTitle{
+        top: 12px;
+    }
+    .header{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .header{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header .homepageLink{
+        transform: scale(0.5, 0.5);
+        position: absolute;
+        left: -55px;
+        margin: 0;
+    }
+    .header .navTag{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-self: center;
+        font-size: 1.3rem;
+        margin-top: 100px;
+        & a{
+            font-size: 0.8rem;
+        }
+    }
+    .main{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    .mainTitle { 
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        position: relative;
+        width: 136px;
+        height: 50px;
+        top: 2px;
+        line-height: 47px;
+    }
+    #gridPhotographerid243, #gridPhotographerid930, #gridPhotographerid82, #gridPhotographerid527, #gridPhotographerid925, #gridPhotographerid195 {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .gridPhotographersWrapper{
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        max-width: 695px;
+        min-width: 320px;
+        .gridPhotographers{
+            width: 100%;
+            display: grid; 
+            grid-template-columns: 1fr;  
+            gap: 10px;  
+        }
+    }
+}
+@media screen and (min-width: 696px) and (max-width: 1023px){
+    .header{
+        margin-left: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .header .homepageLink{
+        transform: scale(0.75,0.75);
+        position: relative;
+        right: 10px;
+        margin-top: 10px;
+    }
+    .mainTitle{
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+        width: 156px;
+        height: 47px;
+        line-height: 47px;
+        top: 12px;
+        left: 42px;
+    }
+    .gridPhotographersWrapper{
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        max-width: 1440px;
+    }
+    .gridPhotographersWrapper .gridPhotographers{
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+    }
+}
+@media screen and (min-width: 696px) and (max-width: 819px){
+    .header .navTag{
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        margin-top: 100px;
+        & a{
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    .header .navTag{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        font-size: 1.3rem;
+        & a{
+            font-size: 0.8rem;
+        }
+    }
+    .mainTitle{
+        top: 15px;
+    }
+    @media screen and (min-width: 820px){
+        .header .navTag{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            align-self: center;
+            max-width: 500px;
+            font-size: 1.3rem;
+            margin-top: 100px;
+            & a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .header .navTag{
+        margin-top: 115px;
+        justify-content: center;
+        width: 100%;
+        right: 0;
+    }
+}
+@media screen and (min-width: 1441px){
+    .header{
+        margin-left: 0;
+    }
+    .mainTitle{
+        left: 0;
+        width: 312px;
+    }
+    a#refresh{
+        left: 50px;
+    }
+}

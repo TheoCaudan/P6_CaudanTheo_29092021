@@ -1,0 +1,46 @@
+.header{
+    position: absolute;
+    width: 100vw;
+    height: 110px;
+    margin-left: 70px;
+    top: 6px;
+    box-sizing: border-box;
+    .goToContent{
+        display: none;
+        position: absolute;
+        background-color: $color-secondary-bg;
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 170px;
+        height: 19px;
+        top: 3px;
+    }
+    a#refresh{
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 2;
+        background: url(../img/logo.svg) center no-repeat;
+        & .homepageLink{
+            width: 200px;
+            height: 50px;
+        }
+    }
+    .navTag{
+        height: 29px;
+        padding-top: 4px;
+        & a{
+            margin-right: 5px;
+            &:hover{
+                background-color: $color-primary-bg;
+                color: white;
+            }
+        }
+    }
+}

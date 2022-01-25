@@ -1,0 +1,51 @@
+.photographerContactBtn{
+    background-color: $color-primary-bg;
+    color: white;
+    z-index: 3;
+    width: 170px;
+    height: 69px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid white;
+    &:hover, &:focus{
+        background-color: $color-secondary-bg;
+        color: black;
+        cursor: pointer;
+    }
+}
+.scrollingMenu{
+    width: 170px;
+    height: 69px;
+    position: absolute;
+    background-color: $color-primary-bg;
+    border-radius: 5px;
+    color: white;
+    font-family: $font;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    &Option:hover{
+        background-color: $color-secondary-bg !important;
+    }
+    &:hover{
+        background-color: $color-secondary-bg;
+        color: black;
+        font-weight: 800;
+    }
+}
+.photographerContactModalContentSubmit{
+    background-color: #901C1C;
+    color: white;
+    z-index: 3;
+    width: 170px;
+    height: 69px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #901C1C;
+}
