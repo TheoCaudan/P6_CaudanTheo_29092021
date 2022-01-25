@@ -1,0 +1,1679 @@
+html {
+  box-sizing: border-box;
+  color: rgba(51, 51, 51, 0.979);
+  font-family: "DM Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  display: flex;
+}
+
+body {
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+a {
+  color: #D3573C;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+a:hover {
+  color: rgba(51, 51, 51, 0.979);
+}
+
+h1, h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #D3573C;
+  font-weight: 400;
+  font-family: "DM Sans";
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 901px) {
+  .photographer {
+    background-color: #FAFAFA;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 521px) and (max-width: 901px) {
+  .photographerPicImg {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .photographerContactBtn {
+    position: fixed;
+    margin-left: -85px;
+    bottom: 50px;
+    max-height: 35px;
+    max-width: 170px;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 520px) {
+  .photographerPicImg {
+    max-height: 90px;
+    max-width: 90px;
+  }
+
+  .header a#refresh {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .photographer {
+    top: 100px;
+  }
+  .photographerAboutName {
+    font-size: 2rem;
+    max-width: 203px;
+  }
+  .photographerAboutTags {
+    top: 170px;
+    left: -15px;
+  }
+  .photographerPic {
+    left: 65%;
+  }
+
+  .photographerPicturesImg {
+    max-width: 80vw;
+  }
+
+  .photographerPicturesTitle {
+    max-width: 200px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) and (min-width: 320px) and (max-width: 460px) {
+  .photographerPicturesNbrLikes {
+    top: -45px;
+    margin-left: 76%;
+    margin-right: 30px;
+  }
+
+  .photographerPicturesLikes {
+    top: -87px;
+    margin-left: 85%;
+    margin-right: 30px;
+  }
+
+  footer .display {
+    height: 27px;
+    right: 0;
+  }
+  footer .photographerPrice {
+    right: 0;
+  }
+
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.5, 0.5);
+  }
+
+  .prevPic {
+    left: 0px;
+  }
+
+  .nextPic {
+    right: 0px;
+  }
+
+  .lightboxCloser {
+    top: 10px;
+    right: 10px;
+  }
+
+  #lightboxContentMedia {
+    max-width: 80vw;
+  }
+
+  #lightboxContentMediaTitle {
+    max-width: 233px;
+    left: 162px;
+  }
+
+  #lightboxContentMediaLikes {
+    margin-left: 85%;
+    margin-right: 30px;
+  }
+
+  #lightboxContentMediaLikesNbr {
+    margin-left: 75%;
+    margin-right: 30px;
+  }
+
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+  }
+
+  .goToHomepage {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .scrollingMenu {
+    top: 335px;
+    left: -30px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 70%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .sortingText {
+    top: 400px;
+    left: -30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  #photographerAboutName243 {
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .header a#refresh .homepageLink {
+    width: 200px;
+    height: 50px;
+    margin-top: -60px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .header .navTag {
+    margin-top: 55px;
+    width: 269px;
+    overflow-wrap: break-word;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .mainTitle {
+    left: 35px;
+    top: 2px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .header a#refresh {
+    left: -30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 460px) {
+  .photographerAboutName {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 374px) {
+  #photographerAboutName82, #photographerAboutName195 {
+    max-width: 220px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 430px) {
+  #photographerAboutName925 {
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 621px) {
+  #photographerAboutName82 {
+    max-width: 406px;
+    font-size: 3.7rem;
+  }
+
+  #photographerAboutName925 {
+    max-width: 400px;
+    font-size: 3.7rem;
+  }
+
+  #photographerAboutName195 {
+    max-width: 410px;
+    font-size: 3.7rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .headerProfile {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+  .headerProfile {
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 2560px) {
+  .photographer {
+    top: 100px;
+  }
+  .photographerAboutTags {
+    top: 170px;
+  }
+
+  .scrollingMenu {
+    top: 465px;
+  }
+
+  .sortingText {
+    top: 532px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 2560px) and (min-width: 901px) {
+  .photographer {
+    top: 150px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 2560px) {
+  #lightboxContentMediaTitle {
+    max-width: 1050px;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1137px) {
+  .photographerContactBtn {
+    position: relative;
+    left: 40px;
+    top: 160px;
+  }
+}
+@media screen and (min-width: 1138px) and (max-width: 2560px) {
+  .photographerContactBtn {
+    position: relative;
+    left: 240px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 620px) {
+  #photographerAboutName930, #photographerAboutName82 {
+    font-size: 2rem;
+    min-width: 268px;
+  }
+
+  #photographerAboutName925, #photographerAboutName195 {
+    font-size: 2.5rem;
+    max-width: 260px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 620px) and (min-width: 535px) {
+  #photographerAboutName195 {
+    font-size: 3rem;
+    max-width: 310px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 620px) and (min-width: 585px) and (max-width: 620px) {
+  #photographerAboutName930, #photographerAboutName82, #photographerAboutName195 {
+    font-size: 2.7rem;
+  }
+
+  #photographerAboutName82 {
+    min-width: 280px;
+  }
+}
+@media screen and (min-width: 634px) and (max-width: 767px) {
+  #photographerAboutName930, #photographerAboutName527 {
+    font-size: 3rem;
+  }
+
+  #photographerAboutName82, #photographerAboutName925, #photographerAboutName195 {
+    font-size: 3.7rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 384px) {
+  .photographerAboutQuote {
+    max-width: 285px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 365px) {
+  #photographerAboutName195 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  #photographerAboutName527 {
+    max-width: 239px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 585px) {
+  #photographerAboutName527 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 586px) and (max-width: 710px) {
+  #photographerAboutName527 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 369px) and (max-width: 389px) {
+  #photographerAboutName243 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 767px) {
+  div.sorting {
+    position: absolute;
+    top: -150px;
+    left: -35px;
+    width: 150px;
+  }
+
+  .scrollingMenu {
+    position: absolute;
+    top: 315px;
+    margin-right: 70%;
+    margin-left: 114px;
+    margin-top: 50px;
+  }
+
+  footer .display {
+    height: 27px;
+    right: 0;
+  }
+  footer .photographerPrice {
+    right: 0;
+  }
+
+  .photographerPicturesTitle {
+    margin-left: 7%;
+    max-width: 270px;
+    margin-right: 0px;
+  }
+
+  .photographerPicturesLikes {
+    margin-left: 85%;
+    margin-right: 30px;
+    top: -86px;
+  }
+
+  .photographerPicturesNbrLikes {
+    margin-left: 77%;
+    margin-right: 30px;
+    top: -44px;
+  }
+
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.7, 0.7);
+  }
+
+  .prevPic {
+    left: 5px;
+  }
+
+  .nextPic {
+    right: 5px;
+  }
+
+  .lightboxCloser {
+    top: 15px;
+    right: 15px;
+  }
+
+  #lightboxContentMediaLikes {
+    margin-left: 90%;
+    margin-right: 15px;
+  }
+
+  #lightboxContentMediaLikesNbr {
+    margin-left: 85%;
+    margin-right: 15px;
+  }
+
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+  }
+
+  .goToHomepage {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 767px) and (min-width: 461px) and (max-width: 539px) {
+  .navTag {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 330px;
+    overflow-wrap: break-word;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 767px) and (min-width: 540px) and (max-width: 767px) {
+  .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+    margin-left: -30px;
+  }
+
+  .photographerContactBtn {
+    top: 135px;
+  }
+
+  .sortingText {
+    top: 400px;
+    left: -30px;
+  }
+
+  .scrollingMenu {
+    top: 383px;
+    margin-right: 70%;
+    margin-left: 114px;
+  }
+
+  .photographerPicturesTitle {
+    margin-left: 7%;
+    max-width: 270px;
+    margin-right: 0px;
+  }
+
+  .photographerPicturesLikes {
+    margin-left: 88%;
+    margin-right: 20px;
+    top: -86px;
+  }
+
+  .photographerPicturesNbrLikes {
+    margin-left: 80%;
+    margin-right: 20px;
+    top: -44px;
+  }
+
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.7, 0.7);
+  }
+
+  .prevPic {
+    left: 5px;
+  }
+
+  .nextPic {
+    right: 5px;
+  }
+
+  .lightboxCloser {
+    top: 15px;
+    right: 15px;
+  }
+
+  #lightboxContentMediaLikes {
+    margin-left: 88%;
+    margin-right: 15px;
+  }
+
+  #lightboxContentMediaLikesNbr {
+    margin-left: 83%;
+    margin-right: 15px;
+  }
+
+  a#refresh {
+    left: 30px;
+    top: 10px;
+  }
+
+  .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+
+  footer .display {
+    height: 27px;
+    right: 0;
+  }
+  footer .photographerPrice {
+    right: 0;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) and (min-width: 820px) and (max-width: 900px) {
+  .homepageLink {
+    margin-left: -30px;
+  }
+
+  .sortingText {
+    top: 400px;
+    left: -30px;
+  }
+
+  .scrollingMenu {
+    top: 383px;
+    margin-right: 70%;
+    margin-left: 114px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) and (min-width: 901px) and (max-width: 1023px) {
+  .sortingText {
+    top: 435px;
+    left: 10px;
+  }
+
+  .scrollingMenu {
+    margin-right: 70%;
+    margin-left: 200px;
+    top: 419px;
+  }
+
+  .homepageLink {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .photographerContactBtn {
+    top: 135px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .photographerPicturesTitle {
+    margin-left: 7%;
+    max-width: 270px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .photographerPicturesLikes {
+    margin-left: 88%;
+    margin-right: 20px;
+    top: -86px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .photographerPicturesNbrLikes {
+    margin-left: 80%;
+    margin-right: 20px;
+    top: -44px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.7, 0.7);
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .prevPic {
+    left: 20px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .nextPic {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .lightboxCloser {
+    top: 20px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  #lightboxContentMediaLikes {
+    margin-left: 88%;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  #lightboxContentMediaLikesNbr {
+    margin-left: 85%;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  a#refresh {
+    left: 30px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  footer .display {
+    height: 27px;
+    right: 0;
+  }
+  footer .photographerPrice {
+    right: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+    margin-right: 88%;
+    margin-left: 16px;
+  }
+
+  .photographerContactBtn {
+    top: 135px;
+  }
+
+  .sortingText {
+    top: 430px;
+    margin-right: 84%;
+    margin-left: 22px;
+    left: 10px;
+  }
+
+  .scrollingMenu {
+    top: 415px;
+    margin-right: 80%;
+    margin-left: 0px;
+    left: 170px;
+  }
+
+  .photographerPicturesTitle {
+    margin-left: 7%;
+    max-width: 270px;
+    margin-right: 0px;
+  }
+
+  .photographerPicturesLikes {
+    margin-left: 88%;
+    margin-right: 20px;
+    top: -86px;
+  }
+
+  .photographerPicturesNbrLikes {
+    margin-left: 80%;
+    margin-right: 20px;
+    top: -44px;
+  }
+
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.8, 0.8);
+  }
+
+  .prevPic {
+    left: 20px;
+  }
+
+  .nextPic {
+    right: 20px;
+  }
+
+  .lightboxCloser {
+    top: 20px;
+    right: 20px;
+  }
+
+  #lightboxContentMediaLikes {
+    margin-left: 86%;
+    margin-right: 5px;
+  }
+
+  #lightboxContentMediaLikesNbr {
+    margin-left: 83%;
+    margin-right: 5px;
+  }
+
+  a#refresh {
+    left: 70px;
+    top: 10px;
+  }
+
+  .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 604px;
+  }
+
+  footer .display {
+    height: 27px;
+    right: 0;
+  }
+  footer .photographerPrice {
+    right: 0;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .header {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 604px;
+    margin-top: 110px;
+  }
+
+  .mainTitle {
+    top: 2px;
+  }
+
+  .scrollingMenu {
+    margin-left: 180px;
+    margin-right: 50%;
+    top: 515px;
+  }
+
+  .photographerPicturesTitle {
+    margin-left: 7%;
+    max-width: 270px;
+    margin-right: 0px;
+  }
+
+  .photographerPicturesLikes {
+    margin-left: 88%;
+    margin-right: 20px;
+    top: -86px;
+  }
+
+  .photographerPicturesNbrLikes {
+    margin-left: 80%;
+    margin-right: 20px;
+    top: -44px;
+  }
+
+  .lightbox {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prevPic, .nextPic, .lightboxCloser {
+    transform: scale(0.8, 0.8);
+  }
+
+  .prevPic {
+    left: 20px;
+  }
+
+  .nextPic {
+    right: 20px;
+  }
+
+  .lightboxCloser {
+    top: 20px;
+    right: 20px;
+  }
+
+  #lightboxContentMediaLikes {
+    margin-left: 86%;
+    margin-right: 5px;
+  }
+
+  #lightboxContentMediaLikesNbr {
+    margin-left: 83%;
+    margin-right: 5px;
+  }
+}
+.photographerContactBtn {
+  background-color: #901C1C;
+  color: white;
+  z-index: 3;
+  width: 170px;
+  height: 69px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid white;
+}
+.photographerContactBtn:hover, .photographerContactBtn:focus {
+  background-color: #D3573C;
+  color: black;
+  cursor: pointer;
+}
+
+.scrollingMenu {
+  width: 170px;
+  height: 69px;
+  position: absolute;
+  background-color: #901C1C;
+  border-radius: 5px;
+  color: white;
+  font-family: "DM Sans";
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.scrollingMenuOption:hover {
+  background-color: #D3573C !important;
+}
+.scrollingMenu:hover {
+  background-color: #D3573C;
+  color: black;
+  font-weight: 800;
+}
+
+.photographerContactModalContentSubmit {
+  background-color: #901C1C;
+  color: white;
+  z-index: 3;
+  width: 170px;
+  height: 69px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #901C1C;
+}
+
+#gridPhotographerid243, #gridPhotographerid930, #gridPhotographerid82, #gridPhotographerid527, #gridPhotographerid925, #gridPhotographerid195 {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.gridPhotographerHeaderPic {
+  display: flex;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  align-self: center;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.gridPhotographerName, .gridPhotographerTag {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  line-height: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+#gridPhotographerName243 {
+  width: 167px;
+}
+
+#gridPhotographerName930 {
+  width: 301px;
+}
+
+#gridPhotographerName82, #gridPhotographerName925, #gridPhotographerName195 {
+  width: 238px;
+}
+
+#gridPhotographerName527 {
+  width: 271px;
+}
+
+.gridPhotographerAbout {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gridPhotographerAboutLocation, .gridPhotographerAboutDesc, .gridPhotographerAboutPrice {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.gridPhotographerAboutLocation, .gridPhotographerAboutDesc {
+  color: black;
+  margin-bottom: 0px;
+}
+.gridPhotographerAboutPrice {
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.navTag a {
+  height: 25px;
+}
+
+.gridPhotographerTag a {
+  margin-bottom: 50px;
+  max-width: 470px;
+  margin-right: 5px;
+}
+
+.navTag a, .gridPhotographerTag a {
+  border: 0.5px solid #757575;
+  box-sizing: border-box;
+  border-radius: 11px;
+  padding: 2px;
+}
+
+.photographerContactModal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.photographerContactModalContent {
+  margin: 5% auto;
+  width: 100%;
+  max-width: 669px;
+  animation-name: modalopen;
+  animation-duration: 0.8s;
+  background: #DB8876;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.photographerContactModalContentTitle {
+  max-width: 600px;
+  margin-left: 50px;
+  color: black;
+  font-size: 64px;
+}
+
+.textControlFirstname, .textControlLastname, .textControlEmail {
+  height: 68px;
+}
+
+.textControlMessage {
+  height: 170px;
+}
+
+.textControlFirstname, .textControlLastname, .textControlEmail, .textControlMessage {
+  width: 99%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .photographerContactModalContentTitle {
+    font-size: 32px;
+    margin-left: 8%;
+    max-width: 292px;
+  }
+
+  .formLabel {
+    font-size: 24px !important;
+  }
+
+  .textControlFirstname, .textControlLastname, .textControlEmail {
+    height: 42px;
+  }
+
+  .photographerContactModalContentSubmit {
+    margin-left: 8% !important;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .photographerContactModalContentTitle {
+    font-size: 38px;
+    margin-left: 30px;
+    max-width: 345px;
+  }
+
+  .formLabel {
+    font-size: 28px !important;
+  }
+
+  .textControlFirstname, .textControlLastname, .textControlEmail {
+    height: 44px;
+  }
+
+  .photographerContactModalContentSubmit {
+    margin-left: 30px !important;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .photographerContactModalContentTitle {
+    font-size: 42px;
+    margin-left: 8%;
+    max-width: 389px;
+  }
+
+  .formLabel {
+    font-size: 30px !important;
+  }
+
+  .textControlFirstname, .textControlLastname, .textControlEmail {
+    height: 46px;
+  }
+
+  .photographerContactModalContentSubmit {
+    margin-left: 8% !important;
+  }
+}
+.photographerContactModalContentBody {
+  padding: 15px 8%;
+  margin: 15px auto;
+}
+
+.photographerContactModalContentClose {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 42px;
+  height: 42px;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.photographerContactModalContentClose:before, .photographerContactModalContentClose:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+
+.photographerContactModalContentClose:before {
+  transform: rotate(45deg);
+}
+
+.photographerContactModalContentClose:after {
+  transform: rotate(-45deg);
+}
+
+.formLabel {
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 11px;
+  color: black;
+}
+
+.photographerContactModalContentSubmit {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  overflow: hidden;
+  animation: lightboxIn 500ms;
+}
+
+.lightboxContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.lightboxContentPic {
+  max-width: 100%;
+  height: auto;
+  animation: lightboxIn 500ms;
+}
+
+#lightboxContentMedia {
+  max-width: 1050px;
+  max-height: 900px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+#lightboxContentMediaTitle {
+  position: absolute;
+  width: 80%;
+  top: 90%;
+  transform: translate(-50%, -10%);
+}
+#lightboxContentMediaLikes {
+  position: absolute;
+  top: 92%;
+  width: 80%;
+  height: 25px;
+}
+#lightboxContentMediaLikesNbr {
+  position: absolute;
+  top: 90%;
+  width: 80%;
+  height: 25px;
+}
+#lightboxContentMediaLikes:hover {
+  cursor: pointer;
+}
+
+.lightboxCloser {
+  cursor: pointer;
+  position: absolute;
+  font-size: xxx-large;
+  color: #901C1C;
+}
+
+.prevPic, .nextPic {
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  cursor: pointer;
+  font-size: xxx-large;
+  color: #901C1C;
+}
+
+@keyframes lightboxIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header {
+  position: absolute;
+  width: 100vw;
+  height: 110px;
+  margin-left: 70px;
+  top: 6px;
+  box-sizing: border-box;
+}
+.header .goToContent {
+  display: none;
+  position: absolute;
+  background-color: #D3573C;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 19px;
+  top: 3px;
+}
+.header a#refresh {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 2;
+  background: url(../img/logo.svg) center no-repeat;
+}
+.header a#refresh .homepageLink {
+  width: 200px;
+  height: 50px;
+}
+.header .navTag {
+  height: 29px;
+  padding-top: 4px;
+}
+.header .navTag a {
+  margin-right: 5px;
+}
+.header .navTag a:hover {
+  background-color: #901C1C;
+  color: white;
+}
+
+.headerProfile {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .homepageLink {
+    transform: scale(0.8, 0.8);
+    margin-left: -40px;
+  }
+}
+footer {
+  position: relative;
+  width: 100%;
+}
+footer .display {
+  position: fixed;
+  bottom: 0;
+  width: 155px;
+  padding-left: 10px;
+  font-weight: 700;
+  color: black;
+  background-color: #D3573C;
+}
+footer .totalLikes::after {
+  content: "\f004";
+}
+footer .totalLikes::before {
+  content: "" !important;
+}
+footer .photographerPrice {
+  position: fixed;
+  bottom: 0;
+  height: 21px;
+  margin-bottom: -1px;
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+}
+
+@media screen and (min-width: 1441px) {
+  footer .display {
+    height: 27px;
+    right: calc((100vw - 1440px) / 2);
+  }
+  footer .photographerPrice {
+    right: calc((100vw - 1440px) / 2);
+  }
+}
+.goToContent:focus, .goToContent:hover {
+  display: block;
+}
+
+.mainTitle {
+  display: block;
+  font-weight: 500;
+  font-size: 36px;
+  position: relative;
+  width: 325px;
+  height: 47px;
+  margin-right: 70px;
+  margin-left: auto;
+  line-height: 47px;
+}
+
+.gridPhotographersWrapper {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  max-width: 1440px;
+}
+.gridPhotographersWrapper .gridPhotographers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.gridPhotographerTag a:hover {
+  background-color: #901C1C;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .mainTitle {
+    top: 12px;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header .homepageLink {
+    transform: scale(0.5, 0.5);
+    position: absolute;
+    left: -55px;
+    margin: 0;
+  }
+
+  .header .navTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3rem;
+    margin-top: 100px;
+  }
+  .header .navTag a {
+    font-size: 0.8rem;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+
+  .mainTitle {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    width: 136px;
+    height: 50px;
+    top: 2px;
+    line-height: 47px;
+  }
+
+  #gridPhotographerid243, #gridPhotographerid930, #gridPhotographerid82, #gridPhotographerid527, #gridPhotographerid925, #gridPhotographerid195 {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .gridPhotographersWrapper {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    max-width: 695px;
+    min-width: 320px;
+  }
+  .gridPhotographersWrapper .gridPhotographers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 696px) and (max-width: 1023px) {
+  .header {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header .homepageLink {
+    transform: scale(0.75, 0.75);
+    position: relative;
+    right: 10px;
+    margin-top: 10px;
+  }
+
+  .mainTitle {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    width: 156px;
+    height: 47px;
+    line-height: 47px;
+    top: 12px;
+    left: 42px;
+  }
+
+  .gridPhotographersWrapper {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .gridPhotographersWrapper .gridPhotographers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 696px) and (max-width: 819px) {
+  .header .navTag {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    margin-top: 100px;
+  }
+  .header .navTag a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .header .navTag {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .header .navTag a {
+    font-size: 0.8rem;
+  }
+
+  .mainTitle {
+    top: 15px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-width: 820px) {
+  .header .navTag {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    max-width: 500px;
+    font-size: 1.3rem;
+    margin-top: 100px;
+  }
+  .header .navTag a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .header .navTag {
+    margin-top: 115px;
+    justify-content: center;
+    width: 100%;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .header {
+    margin-left: 0;
+  }
+
+  .mainTitle {
+    left: 0;
+    width: 312px;
+  }
+
+  a#refresh {
+    left: 50px;
+  }
+}
+.photographer {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 313px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  border-radius: 5px;
+}
+.photographerPictures {
+  height: fit-content;
+  margin-top: 360px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.photographerPicturesLink {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.photographerPicturesImg {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  margin: 30px;
+  border-radius: 5px;
+}
+.photographerPicturesTitle {
+  width: 350px;
+}
+.photographerPicturesTitle:hover {
+  color: #901C1C;
+}
+.photographerPicturesLikes, .photographerPicturesNbrLikes {
+  position: relative;
+}
+.photographerPicturesLikes:hover {
+  cursor: pointer;
+}
+.photographerAbout {
+  position: absolute;
+  width: 90%;
+  height: 228px;
+  left: 30px;
+  top: 30px;
+}
+.photographerAboutName {
+  position: absolute;
+  left: 0%;
+  right: 21.23%;
+  top: 0%;
+  bottom: 58.5%;
+  width: fit-content;
+}
+.photographerAboutName2 {
+  width: 535px;
+}
+.photographerAboutName3 {
+  width: 407px;
+}
+.photographerAboutName4 {
+  width: 480px;
+}
+.photographerAboutName5 {
+  width: 413px;
+}
+.photographerAboutName6 {
+  width: 409px;
+}
+.photographerAboutLocation {
+  position: absolute;
+  left: 0%;
+  right: 65.36%;
+  top: 43.5%;
+  width: 200px;
+}
+.photographerAboutQuote {
+  position: absolute;
+  left: 0%;
+  right: 2.79%;
+  top: 56.5%;
+  bottom: 22%;
+  width: fit-content;
+}
+.photographerAboutTags {
+  position: absolute;
+  margin-top: 10px;
+}
+.photographerAboutTags a {
+  border: 0.5px solid #757575;
+  box-sizing: border-box;
+  border-radius: 11px;
+  padding: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.photographerAboutTags a:hover {
+  background-color: #901C1C;
+  color: white;
+}
+.photographerContact {
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+.photographerPic {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  width: fit-content;
+}
+.photographerPic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sortingText {
+  position: absolute;
+  margin-left: 70px;
+}
+
+/*# sourceMappingURL=style.css.map */
