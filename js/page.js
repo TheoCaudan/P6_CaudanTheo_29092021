@@ -495,7 +495,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   const picGrid = document.createElement('div')
   picGrid.className = 'photographerPictures'
   picGrid.id = 'photographerPictures'
-  picGrid.tabIndex = '-1'
+  picGrid.tabIndex = -1
 
   document.querySelector('main').append(picGrid)
 
