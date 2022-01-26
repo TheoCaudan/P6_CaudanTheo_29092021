@@ -13,13 +13,15 @@ function keyboardNavigation() {
 }
 
 const handleHeartClick = (id, btn_id) =>{
-  const el = document.getElementById(id), btn = document.getElementById(btn_id)
+  const el = document.getElementById(id), btn = document.getElementById(btn_id), total = document.querySelector('.totalLikes')
   el.onclick = () =>{
     if(el.classList.contains('far')){
       btn.innerHTML = parseInt(btn.innerHTML) + 1
+      total.innerHTML = parseInt(total.innerHTML) + 1
       el.classList.replace('far', 'fas')
     } else{
       btn.innerHTML = parseInt(btn.innerHTML) - 1
+      total.innerHTML = parseInt(total.innerHTML) - 1
       el.classList.replace('fas', 'far')
     }
   }
@@ -260,6 +262,7 @@ function displayPictures(tabTri) {
       pictures.className =
         'photographerPicturesImg photographerPicturesImg' + tabTri[i].id
       pictures.src = './img/' + tabTri[i].photographerId + '/' + tabTri[i].image
+      pictures.tabIndex = 0
 
       const picTitle = document.createElement('h3')
       picTitle.className = 'photographerPicturesTitle'
@@ -284,6 +287,7 @@ function displayPictures(tabTri) {
       videos.className =
         'photographerPicturesImg photographerPicturesImg' + tabTri[i].id
       videos.setAttribute('preload', 'auto')
+      videos.tabIndex = 0 
 
       const videoSource = document.createElement('source')
       videoSource.src =

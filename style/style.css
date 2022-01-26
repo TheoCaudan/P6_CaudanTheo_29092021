@@ -38,6 +38,10 @@ a {
 a:hover {
   color: rgba(51, 51, 51, 0.979);
 }
+a.goToHomepage {
+  width: 200px;
+  height: 50px;
+}
 
 h1, h2 {
   margin-top: 1rem;
@@ -692,6 +696,11 @@ ul {
     height: 50px;
     margin-right: 88%;
     margin-left: 16px;
+  }
+
+  a.goToHomepage {
+    max-width: 200px;
+    max-height: 50px;
   }
 
   .photographerContactBtn {
