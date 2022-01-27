@@ -1308,9 +1308,23 @@ ul {
   max-width: 100%;
 }
 
+a#goToHomepage {
+  width: 200px;
+  height: 50px;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 2;
+  background: url(../../img/logo.svg) center no-repeat;
+}
+
 @media screen and (min-width: 320px) and (max-width: 460px) {
-  .homepageLink {
+  a#goToHomepage {
     transform: scale(0.8, 0.8);
+    margin-left: -40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  a#goToHomepage {
     margin-left: -40px;
   }
 }
@@ -1692,6 +1706,12 @@ footer .photographerPrice {
 .sortingText {
   position: absolute;
   margin-left: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .photographerPictures {
+    margin-top: 500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

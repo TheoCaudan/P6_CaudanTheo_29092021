@@ -156,6 +156,7 @@ function displayMain() {
     const title = document.createElement('h2')
     title.className = 'gridPhotographerName gridPhotographerHeaderName' + id
     title.textContent = name
+    title.ariaLabel = '' + name
   
     link.append(title)
   

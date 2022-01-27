@@ -263,6 +263,7 @@ function displayPictures(tabTri) {
         'photographerPicturesImg photographerPicturesImg' + tabTri[i].id
       pictures.src = './img/' + tabTri[i].photographerId + '/' + tabTri[i].image
       pictures.tabIndex = 0
+      pictures.ariaLabel = '' + tabTri[i].image + 'closeup view'
 
       const picTitle = document.createElement('h3')
       picTitle.className = 'photographerPicturesTitle'
@@ -277,6 +278,8 @@ function displayPictures(tabTri) {
       const picLikes = document.createElement('i')
       picLikes.className = 'photographerPicturesLikes far fa-heart'
       picLikes.id = 'photographerPicturesLikes' + tabTri[i].id
+      picLikes.tabIndex = 0
+      picLikes.ariaLabel = 'Likes'
 
       picturesContainerLink.append(pictures)
       picturesContainerAll.append(picTitle)
@@ -383,8 +386,14 @@ function displayLikes() {
   display.append(price)
   document.querySelector('footer').append(display)
 }
-
+//gotohomepage function
+function home() {
+  document.location.assign('./index.html')
+}
 function displayProfile(name, id, city, country, tagline, tags, portrait) {
+  // logo link to homepage
+  document.getElementById('goToHomepage').setAttribute('onClick', 'home()')
+  document.getElementById('goToHomepage').tabIndex = '0'
   //tab title
   const title = document.getElementById('title')
   title.innerText = 'FishEye - ' + name
@@ -445,6 +454,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   contactBtn.className = 'photographerContactBtn'
   contactBtn.innerText = 'Contactez moi'
   contactBtn.tabIndex = '0'
+  contactBtn.ariaLabel = 'Contact Me'
 
   contact.append(contactBtn)
 
@@ -457,8 +467,9 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   const picImg = document.createElement('img')
   picImg.className = 'photographerPicImg'
   picImg.src = './img/PhotographersIDPhotos/' + portrait
-  picImg.alt = '' + name
+  picImg.alt = ''
   picImg.tabIndex = '0'
+  picImg.ariaLabel = '' + name
 
   pic.append(picImg)
 
@@ -480,14 +491,15 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   const scroll = document.createElement('select')
   scroll.className = 'scrollingMenu'
   scroll.tabIndex = '0'
+  scroll.ariaLabel = 'Order By'
   scroll.name = 'option'
   scroll.id = 'optionSelect'
   scroll.innerHTML =
-    '<option type="radio" value="popularity" name="option">Popularité</option>'
+    '<option type="radio" value="popularity" name="option" aria-label="Popularity">Popularité</option>'
   scroll.innerHTML +=
-    '<option type="radio" value="date" name="option">Date</option>'
+    '<option type="radio" value="date" name="option" aria-label="Date">Date</option>'
   scroll.innerHTML +=
-    '<option type="radio" value="title" name="option">Titre</option>'
+    '<option type="radio" value="title" name="option" aria-label="Title">Titre</option>'
 
   document.querySelector('main').append(scroll)
 
