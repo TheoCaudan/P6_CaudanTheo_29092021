@@ -792,6 +792,11 @@ ul {
     max-width: 1440px;
   }
 
+  .homepageLink {
+    width: 200px;
+    height: 50px;
+  }
+
   .navTag {
     display: block;
     margin-left: auto;
@@ -807,7 +812,7 @@ ul {
   .scrollingMenu {
     margin-left: 180px;
     margin-right: 50%;
-    top: 515px;
+    top: 420px;
   }
 
   .photographerPicturesTitle {
@@ -860,6 +865,10 @@ ul {
   #lightboxContentMediaLikesNbr {
     margin-left: 83%;
     margin-right: 5px;
+  }
+
+  .sortingText {
+    top: 438px;
   }
 }
 .photographerContactBtn {
