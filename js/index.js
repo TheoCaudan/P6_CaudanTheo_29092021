@@ -6,6 +6,7 @@ function displayMain() {
     mainTitle.className = 'mainTitle'
     mainTitle.tabIndex = '0'
     mainTitle.innerText = 'Nos photographes'
+    mainTitle.ariaLabel = 'Nos photographes'
   
     main.append(mainTitle)
   

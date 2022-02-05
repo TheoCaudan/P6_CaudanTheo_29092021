@@ -117,6 +117,7 @@ function displayPictures(tabTri) {
             'lightboxContentMediaTitle',
           )
           lightboxContentTitle.innerHTML = '' + info.title
+          lightboxContentTitle.ariaLabel = '' + info.title
           const lightboxContentMediaLikes = document.getElementById(
             'lightboxContentMediaLikesNbr',
           )
@@ -263,7 +264,7 @@ function displayPictures(tabTri) {
         'photographerPicturesImg photographerPicturesImg' + tabTri[i].id
       pictures.src = './img/' + tabTri[i].photographerId + '/' + tabTri[i].image
       pictures.tabIndex = 0
-      pictures.ariaLabel = '' + tabTri[i].image + 'closeup view'
+      pictures.ariaLabel = '' + tabTri[i].title
 
       const picTitle = document.createElement('h3')
       picTitle.className = 'photographerPicturesTitle'
@@ -278,8 +279,7 @@ function displayPictures(tabTri) {
       const picLikes = document.createElement('i')
       picLikes.className = 'photographerPicturesLikes far fa-heart'
       picLikes.id = 'photographerPicturesLikes' + tabTri[i].id
-      picLikes.tabIndex = 0
-      picLikes.ariaLabel = 'Likes'
+      picLikes.tabIndex = -1  
 
       picturesContainerLink.append(pictures)
       picturesContainerAll.append(picTitle)
@@ -291,6 +291,7 @@ function displayPictures(tabTri) {
         'photographerPicturesImg photographerPicturesImg' + tabTri[i].id
       videos.setAttribute('preload', 'auto')
       videos.tabIndex = 0 
+      videos.ariaLabel = '' + tabTri[i].title 
 
       const videoSource = document.createElement('source')
       videoSource.src =
@@ -322,6 +323,7 @@ function displayPictures(tabTri) {
   document.querySelector('main').append(picturesContainer)
 }
 
+
 const createLightBox = () => {
   const lightbox = document.createElement('div')
   lightbox.dataset.ids = tabIndex.join(',')
@@ -334,15 +336,18 @@ const createLightBox = () => {
     lightbox.style.display = 'none'
   }
   lightboxCloser.className = 'lightboxCloser fas fa-times'
+  lightboxCloser.ariaLabel = 'Fermer la visionneuse'
   lightbox.append(lightboxCloser)
 
   const lightboxNext = document.createElement('i')
   lightboxNext.className = 'nextPic fas fa-chevron-right'
+  lightboxNext.ariaLabel = 'Image suivante'
   lightboxNext.id = 'nextPic'
   lightbox.append(lightboxNext)
 
   const lightboxPrev = document.createElement('i')
   lightboxPrev.className = 'prevPic fas fa-chevron-left'
+  lightboxPrev.ariaLabel = 'Image precedente'
   lightboxPrev.id = 'prevPic'
   lightbox.append(lightboxPrev)
 
@@ -394,6 +399,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   // logo link to homepage
   document.getElementById('goToHomepage').setAttribute('onClick', 'home()')
   document.getElementById('goToHomepage').tabIndex = '0'
+  document.getElementById('goToHomepage').ariaLabel = 'Retour vers menu'
   //tab title
   const title = document.getElementById('title')
   title.innerText = 'FishEye - ' + name
@@ -454,7 +460,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   contactBtn.className = 'photographerContactBtn'
   contactBtn.innerText = 'Contactez moi'
   contactBtn.tabIndex = '0'
-  contactBtn.ariaLabel = 'Contact Me'
+  contactBtn.ariaLabel = 'Contactez moi'  
 
   contact.append(contactBtn)
 
@@ -495,11 +501,11 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   scroll.name = 'option'
   scroll.id = 'optionSelect'
   scroll.innerHTML =
-    '<option type="radio" value="popularity" name="option" aria-label="Popularity">Popularité</option>'
+    '<option type="radio" value="popularity" name="option" aria-label="Popularité">Popularité</option>'
   scroll.innerHTML +=
     '<option type="radio" value="date" name="option" aria-label="Date">Date</option>'
   scroll.innerHTML +=
-    '<option type="radio" value="title" name="option" aria-label="Title">Titre</option>'
+    '<option type="radio" value="title" name="option" aria-label="Titre">Titre</option>'
 
   document.querySelector('main').append(scroll)
 
@@ -568,6 +574,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   modalFormDataFirstnameLabel.className = 'formLabel'
   modalFormDataFirstnameLabel.setAttribute('for', 'firstname')
   modalFormDataFirstnameLabel.innerText = 'Prénom'
+  modalFormDataFirstnameLabel.ariaLabel = ' Prénom'
 
   modalFormData.append(modalFormDataFirstnameLabel)
 
@@ -605,6 +612,7 @@ function displayProfile(name, id, city, country, tagline, tags, portrait) {
   modalFormDataLastnameLabel.className = 'formLabel'
   modalFormDataLastnameLabel.setAttribute('for', 'lastname')
   modalFormDataLastnameLabel.innerText = 'Nom'
+  modalFormDataLastnameLabel.ariaLabel = 'Nom'
 
   modalFormData2.append(modalFormDataLastnameLabel)
 
